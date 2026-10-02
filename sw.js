@@ -1,5 +1,5 @@
 // Funciona sin conexión. Solo guarda los archivos de la propia app; nada de terceros.
-const CACHE = 'cuaderno-v3';
+const CACHE = 'cuaderno-v6';
 const ASSETS = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './apple-touch-icon.png'];
 self.addEventListener('install', (e) => { e.waitUntil(caches.open(CACHE).then((c) => c.addAll(ASSETS))); self.skipWaiting(); });
 self.addEventListener('activate', (e) => {
